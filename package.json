@@ -1,0 +1,21 @@
+{
+  "name": "nodelol-discord-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "frasergr",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "discord.js": "^11.4.2",
+    "dotenv": "^7.0.0",
+    "eslint": "^5.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
+
