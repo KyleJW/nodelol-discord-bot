@@ -26,11 +26,11 @@ const nowQuoteSelector = (user, quote) => {
     return user ? nowQuotes[quote].replace('{USER}', user) : nowQuotes[quote]
 };
 
-const reactToWordsRegex = /^(thanos|fruit soup)$/
+const reactToWordsRegex = /^(thanos|fruit soup)$/;
 
 client.on('message', message => {
     if (message.author.bot) return;
-    if (message.content.indexOf('!') !== 0) return;
+//    if (message.content.indexOf('!') !== 0) return;
     switch(message.content) {
         case '!drnow':
             message.channel.send(`${nowQuoteSelector(message.author.username, randomArraySelector(nowQuotes.length))}`).then(message.delete());
@@ -56,6 +56,10 @@ client.on('message', message => {
         case '!milkman':
             message.channel.send(new RichEmbed().setFooter(message.author.username).setImage("https://cdn.discordapp.com/attachments/210951354972110848/568220721554259968/scheer.png")).then(message.delete());
             break;
+	case '!flatpepe':
+	    message.channel.send(new RichEmbed().setFooter(message.author.username).setImage("https://cdn.discordapp.com/attachments/210951354972110848/570106339611639840/1555702636836.png")).then(message.delete());
+	case '!coolpepe':
+	   message.channel.send(new RichEmbed().setFooter(message.author.username).setImage("https://cdn.discordapp.com/emojis/470136383500058636.png")).then(message.delete());
         case '!test':
 
             break;
