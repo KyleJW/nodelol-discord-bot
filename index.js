@@ -60,8 +60,9 @@ client.on('message', message => {
 	    message.channel.send(new RichEmbed().setFooter(message.author.username).setImage("https://cdn.discordapp.com/attachments/210951354972110848/570106339611639840/1555702636836.png")).then(message.delete());
 	case '!coolpepe':
 	   message.channel.send(new RichEmbed().setFooter(message.author.username).setImage("https://cdn.discordapp.com/emojis/470136383500058636.png")).then(message.delete());
-        case '!test':
-
+        case '!kyle':
+	   message.channel.send(new RichEmbed().setFooter(message.author.username).setImage("https://cdn.discordapp.com/emojis/467441714018123776.png")).then(message.delete());
+	case '!test':
             break;
     }
     if (message.content.split(' ')[0] === '!bfkd') {
